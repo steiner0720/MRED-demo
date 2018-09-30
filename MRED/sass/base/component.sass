@@ -1,0 +1,619 @@
+// component-setting //
+
+// component-nav-top //
+.nav-logo
+  width: 60px
+  img
+    width: 60px
+.nav-menu
+  cursor: pointer
+  width: 50px
+  height: 50px
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 100px
+  transition: all .3s ease-out
+  &:hover
+    width: 50px
+    height: 70px
+    .menu-btn_touch
+      width: 50px
+      height: 50px
+    .menu-btnLine_left, .menu-btnLine_right
+      background-color: $gold
+.nav-menu_btn
+  width: 50px
+  height: 50px
+  z-index: 2
+  display: flex
+  justify-content: center
+.menu-btnLine_left, .menu-btnLine_right
+  width: 26px
+  height: 3px
+  background-color: $gray_2
+  transition: all .3s ease
+.menu-btnLine_left
+  // all=70; 70/2=35; margin=12; 35-3(height)=32; 32-margin/2=26px; 32+margin/2=38px;
+  top: 16px
+  position: absolute
+.menu-btnLine_right
+  top: 30px
+  position: absolute  
+  transform: rotate(0deg)
+.menu-btn_touch
+  width: 0px
+  height: 0px
+  background-color: $gray_4
+  transition: all .3s ease
+  position: absolute
+  border-radius: 100px
+  z-index: 1
+.nav-social_link
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 30px
+    transition: all .3s ease
+    cursor: pointer
+    transform: scale(1.0, 1.0)
+    &:hover
+      transform: scale(1.1, 1.1)
+.nav-fb, .nav-ig
+  margin-left: 20px
+
+// component-pagination //
+.nav-page_gotop
+  width: 28px
+  margin-bottom: 44px
+.gotop-btn
+  width: 28px
+  height: 28px
+  border-radius: 19px
+  background-color: $gray_1
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  cursor: pointer
+  transition: all .3s ease
+  &:hover
+    background-color: $gold
+  img
+    width: 14px
+    z-index: 2
+.gotop-font
+  transform: rotate(90deg)
+  margin-top: 20px
+.gotop-default
+// gotop-default: none //
+.nav-pagination_wrap
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.pagination-prev, .pagination-current, .pagination-next
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.pagination-next, .pagination-prev
+  width: 28px
+  height: 28px
+  cursor: pointer
+  border-radius: 19px
+  &:hover
+    .pagination-num_touch
+      width: 28px
+      height: 28px
+    p, span
+      color: $gold
+.pagination-num_btn
+  width: 28px
+  height: 28px
+  border-radius: 19px
+  background-color: $gray_1
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: all .3s ease
+  &:hover
+    background-color: $gold
+.pagination-num
+  transform: rotate(90deg)
+  z-index: 2
+  transform: scale(1.0, 1.0)
+  animation: num_progress .8s ease-in-out
+.pagination-txt
+  transform: rotate(90deg)
+  margin-top: 40px
+.pagination-txt_ani
+  transform: scale(1.0, 1.0)
+  animation: num_progress .8s ease-in-out
+@-webkit-keyframes num_progress
+  0%
+    transform: scale(1.0, 1.0)
+  20%
+    transform: scale(0, 0)
+  80%
+    transform: scale(0, 0)
+  100%
+    transform: scale(1.0, 1.0)
+.pagination-num_touch
+  width: 0px
+  height: 0px
+  border-radius: 19px
+  background-color: $gray_4
+  transition: all .3s ease
+  z-index: 1
+  position: absolute
+.pagination-num_border
+  width: 1px
+  height: 16px
+  margin: 44px 0
+  background-color: $gray_1
+.nextPage-btn
+  width: 50px
+  height: 50px
+  border-radius: 25px
+  background-color: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: all .3s ease
+  &:hover
+    background-color: $gray_4
+  img
+    width: 24px
+
+// component-intro //
+.intro-content
+  width: 100%
+  position: absolute
+  z-index: 2
+  bottom: 0px
+  margin-bottom: 150px
+.intro-content-wrap
+  margin: 0 auto
+  max-width: 1200px
+  padding: 0 40px
+.intro-txt
+  max-width: 50%
+.intro-border
+  width: 65vw
+  height: 1px
+  background-color: $gold
+  left: -20vw
+  margin: 25px 0px 40px 0px
+.intro-btn
+  margin-top: 30px
+  width: 100px
+  height: 30px
+  border: 1px solid #fff
+  cursor: pointer
+  z-index: 2
+  overflow: hidden
+  &:hover
+    .intro-btn_touch
+      opacity: .2
+.intro-btn_touch
+  z-index: 1
+  width: 100px
+  height: 50px
+  background-color: #fff
+  position: absolute
+  opacity: .0
+  transition: all .3s ease
+  top: -20px
+.intro-btn_txt
+  display: flex
+  justify-content: center
+  align-content: center
+  padding: 7px
+.intro-bg
+  z-index: -1
+.intro-slick
+  z-index: 1
+.swiper-container
+  z-index: -1
+  width: 100%
+.intro-slick_img
+  img
+    width: 100%
+    height: calc( 100vh - 140px)
+    object-fit: cover
+.intro-slick_mask
+  width: 100%
+  height: calc( 100vh - 140px)
+  overflow: hidden
+  position: absolute
+  z-index: 2
+  background-color: #000
+  opacity: .6
+
+// product //
+.product-bg
+  width: 100%
+  position: absolute
+  z-index: 1
+.product-bg_mask
+  width: 100%
+  height: calc(100vh - 140px)
+  position: absolute
+  z-index: 2
+  background-color: #000000
+  opacity: .6 
+.product-bg_img
+  img
+    width: 100%
+    height: calc( 100vh - 140px)
+    object-fit: cover
+    z-index: 1
+.product-title
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 2
+  padding-top: 5%
+  span
+    font-size: 80px
+    color: #fff
+    font-weight: bold
+    letter-spacing: 10px
+.product-content_wrap
+  width: 100%
+  z-index: 2
+  margin-top: 5%
+.product-content_mixvideo
+  max-width: 1200px
+  padding: 20px 40px
+  margin: 0 auto
+  background-color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: -1
+.product-content-box
+  max-width: 650px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  z-index: -1
+.product-img
+  margin: 0px 40px 0px 0px
+  margin-top: -150px
+  max-width: 125px
+  img
+    width: 100%
+.product-content
+
+.product-ch_wrap
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.product-icon
+  width: 50px
+  img
+    width: 50px
+.product-ch_title
+  margin-left: 12px
+  h2
+    font-size: 30px
+    color: $gray_3
+.product-txt
+  max-width: 400px
+.product-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 150px
+  border: 2px solid $gold
+  padding: 4px 0px
+  margin-top: 20px
+  cursor: pointer
+  &:hover
+    img
+      left: 8px
+.product-btn_img
+  img
+    width: 8px
+    margin-left: 16px
+    left: 0px
+    transition: all .3s ease
+.product-btn_txt
+  p
+    color: $gray_3
+    line-height: 8px
+    font-weight: bold
+.product-video
+  max-width: 45%
+  position: absolute
+  right: 0px
+  cursor: pointer
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2)
+  &:hover
+    .video-btn
+      transform: scale(1.1, 1.1)
+  video
+    width: 100%
+    z-index: -1
+.video-mask
+  width: 100%
+  height: 100%
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 0
+.video-mask_bg
+  width: 100%
+  height: 100%
+  background-color: #222
+  position: absolute
+  opacity: .8
+.video-btn
+  width: 80px
+  height: 80px
+  border-radius: 40px
+  border: 1px solid #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all .3s ease
+  transform: scale(1.0, 1.0)
+  img
+    width: 24px
+.product-fake_box
+  width: 550px
+  max-width: 650px
+  height: 1px
+.product-pagination
+  justify-content: space-between
+  align-items: center
+  display: flex
+  z-index: 2
+  width: 100%
+  margin: 0 auto
+  position: absolute
+  bottom: 35px
+
+.product-prev_page, .product-next_page
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 6
+  background-color: $gray_1
+  padding: 6px 32px
+  cursor: pointer
+  input:focus
+    outline: none
+.product-prev_page
+  .product-page_arrow
+    transform: rotate(180deg)
+.product-page_arrow
+  img
+    width: 8px
+.product-page_img
+  margin: 0 24px
+  img
+    width: 50px
+.news-component
+  max-width: 1280px
+  margin: 0 auto
+.news-top_wrap
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 2
+  position: absolute
+.news-date
+  padding: 18px 24px
+  background-color: #fff
+  top: -15px
+.news-view
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 0
+.news-view_img
+  margin-right: 12px
+  img
+    width: 24px
+.news-read
+  max-width: 140px
+  max-height: 24px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  padding: 24px 0px
+  background-color: $gray_2
+  transition: all .3s ease
+  z-index: 2
+  cursor: pointer
+  &:hover
+    background-color: $gold
+    .news-read_arrow
+      display: none
+.news-read_arrow
+  margin-left: 12px
+  img
+    width: 8px
+.news-content
+  width: 100%
+  z-index: 1
+  display: flex
+  justify-content: space-between
+  align-items: center
+.news-img
+  max-width: 600px
+  max-height: 338px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.news-info
+  max-width: 600px
+  padding: 0px 40px 
+.news-title
+  padding-left: 80px
+.news-boder
+  height: 1px
+  width: 100%
+  background-color: $gold
+  margin: auto
+  position: absolute
+  top: 71px
+  bottom: 0
+.news-txt
+  top: 50px
+  padding: 0px 40px
+
+// contact-component //
+.contact-info_bg-mask
+  width: 100%
+  background-color: #000
+  opacity: .6
+  position: absolute
+  height: 100%
+  z-index: 2
+.contact-info_bg-img
+  width: 100%
+  height: calc( 100vh - 140px)
+  z-index: 1
+  img
+    width: 100%
+    height: calc( 100vh - 140px)
+    object-fit: cover
+.contact-logo_wrap
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0px 40px
+  margin-top: 60px
+  margin-bottom: 30px
+.contact-logo
+  z-index: 2
+  img
+    width: 80px
+.contact-wrap
+  z-index: 2
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0px 40px
+  display: flex
+  justify-content: center
+  align-content: center
+.contact-txt
+  max-width: 100%
+  padding-right: 20px
+  margin-bottom: 40px
+.contact-info
+  padding-left: 20px
+.contact-info_icon
+  display: flex
+  justify-content: flex-start
+  align-content: center
+  margin: 24px 0px
+.contact-info_img
+  width: 36px
+  height: 36px
+  border-radius: 36px
+  background-color: #fff
+  margin-right: 12px
+  img
+    width: 20px
+    height: 20px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    position: absolute
+
+.contact-info_icon-btn
+  cursor: pointer
+  transition: all .3s ease
+  transform: scale(1.0, 1.0)
+  &:hover
+    transform: scale(1.1, 1.1)
+
+.contact-lcation-wrap
+  z-index: 2
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0px 40px
+  display: flex
+  justify-content: center
+  align-content: center
+  flex-wrap: wrap
+.contact-location_top-wrap
+  width: 1100px
+  max-width: 1100px
+  display: flex
+  justify-content: space-between
+  align-content: center
+  background-color: #fff
+  cursor: pointer
+.contact-locate_icon_wrap
+  margin: 12px 24px
+  display: flex
+  justify-content: center
+  align-content: center
+.contact-lcation_icon
+  img
+    width: 16px
+.contact-locate_btn-wrap
+  margin: 12px 24px
+  width: 20px
+  height: 20px
+  border-radius: 20px
+  background-color: #000
+  display: flex
+  justify-content: center
+  align-content: center
+.contact-locate_btn
+  width: 10px
+  img
+    width: 10px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    position: absolute
+.contact-locate_iframe
+  width: 1100px
+  max-width: 1100px
+  img
+    width: 100%
+// rwd-setting //
+@mixin media($width)
+  @media only screen and (max-width: $width)
+    @content
+@include media($pc-media-l)
+  .col-wrap
+
+@include media($pc-media)
+  .col-wrap
+
+@include media($note-media)
+  .col-wrap
+
+@include media($mobile-media)
+  .col-wrap
+
+@include media($mobile-media-s)
+  .col-wrap

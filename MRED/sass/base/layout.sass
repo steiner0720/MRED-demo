@@ -1,0 +1,101 @@
+// layout-setting //
+
+// glabol-layout //
+.container
+  width: 100%
+  margin: 0 auto
+  overflow: hidden
+  z-index: 2
+
+.fullPage-wrap
+  width: 100%
+.section
+  width: 100%
+  height: 100vh
+.section-wrap
+  width: calc( 100% - 140px)
+  height: calc( 100vh - 70px)
+  margin: 0 auto
+  top: 70px
+  overflow: hidden
+
+
+// section-layout //
+.intro
+  .section-wrap 
+.news
+  .section-wrap
+.product
+  .section-wrap
+
+
+// nav-layout //
+.nav-top
+  width: 100%
+  position: fixed
+  height: 70px
+  background-color: #fff
+  z-index: 10
+.nav-top_wrap
+  padding: 0 70px
+  height: 70px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+.pagination
+  width: 70px
+  height: 100vh
+  background-color: #fff
+  z-index: 9
+  position: fixed
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.nextPage
+  width: 100%
+  height: 70px
+  bottom: 0px
+  position: fixed
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+.swiper-container
+
+.product-wrap
+  width: calc( 100vw - 140px)
+  height: calc( 100vh - 140px)
+.product-cat
+  width: calc( 100vw - 140px)
+  height: calc( 100vh - 140px)
+.news-wrap
+  width: 100%
+  margin: 2% 0
+.contact-info_bg
+  position: absolute
+  width: calc( 100vw - 140px)
+  height: calc( 100vh - 140px)
+  z-index: 1
+
+
+  
+// rwd-setting //
+@mixin media($width)
+  @media only screen and (max-width: $width)
+    @content
+@include media($pc-media-l)
+  .col-wrap
+
+@include media($pc-media)
+  .col-wrap
+
+@include media($note-media)
+  .col-wrap
+
+@include media($mobile-media)
+  .col-wrap
+
+@include media($mobile-media-s)
+  .col-wrap
