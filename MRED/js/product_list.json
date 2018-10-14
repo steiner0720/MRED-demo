@@ -1,0 +1,54 @@
+{
+    "cleaner": {
+        "pageInfo": {
+            "en_title": "CLEANER",
+            "ch_title": "洗潔系列",
+            "ch_content": "苦橙花蜂蜜水 有機特級初榨橄欖油 硬脂酸 有機冷壓月見草油 有機牛油果油 甘油 特級初榨椰子油 新鮮檸檬汁 有機冷壓小麥胚芽油 新鮮橙汁 有機冷壓葡萄籽油 新鮮菠蘿汁 苦橙花精萃 橙花精油 沒藥樹脂 三乙醇胺 棕櫚醇 *香葉醇 *金合歡醇 *檸檬烯 *芳樟醇 羥基香茅醛 香精 尼泊金甲酯 尼泊金丙酯",
+            "svgSrc": "svg/clean_gray.svg",
+            "bgImg": "bg_1.jpg"
+        },
+        "paginationLeft": { 
+            "src": "svg/mask_color.svg",
+            "name": "FACE MASK"
+        },
+        "paginationRight": { 
+            "src": "svg/care_color.svg",
+            "name": "FACE CARE"
+        }
+    },
+    "facecare": {
+        "pageInfo": {
+            "en_title": "FACECARE",
+            "ch_title": "臉部保護",
+            "ch_content": "苦橙花蜂蜜水 有機特級初榨橄欖油 硬脂酸 有機冷壓月見草油 有機牛油果油 甘油 特級初榨椰子油 新鮮檸檬汁 有機冷壓小麥胚芽油 新鮮橙汁 有機冷壓葡萄籽油 新鮮菠蘿汁 苦橙花精萃 橙花精油 沒藥樹脂 三乙醇胺 棕櫚醇 *香葉醇 *金合歡醇 *檸檬烯 *芳樟醇 羥基香茅醛 香精 尼泊金甲酯 尼泊金丙酯",
+            "svgSrc": "svg/care_gray.svg",
+            "bgImg": "bg_2.jpg"
+        },
+        "paginationLeft": { 
+            "src": "svg/clean_color.svg",
+            "name": "CLEANER"
+        },
+        "paginationRight": { 
+            "src": "svg/mask_color.svg",
+            "name": "FACE MASK"
+        }
+    },
+    "facemask": {
+        "pageInfo": {
+            "en_title": "FACEMASK",
+            "ch_title": "面膜系列",
+            "ch_content": "苦橙花蜂蜜水 有機特級初榨橄欖油 硬脂酸 有機冷壓月見草油 有機牛油果油 甘油 特級初榨椰子油 新鮮檸檬汁 有機冷壓小麥胚芽油 新鮮橙汁 有機冷壓葡萄籽油 新鮮菠蘿汁 苦橙花精萃 橙花精油 沒藥樹脂 三乙醇胺 棕櫚醇 *香葉醇 *金合歡醇 *檸檬烯 *芳樟醇 羥基香茅醛 香精 尼泊金甲酯 尼泊金丙酯",
+            "svgSrc": "svg/mask_gray.svg",
+            "bgImg": "bg_3.jpg"
+        },
+        "paginationLeft": { 
+            "src": "svg/care_color.svg",
+            "name": "FACE CARE"
+        },
+        "paginationRight": { 
+            "src": "svg/clean_color.svg",
+            "name": "CLEANER"
+        }
+    }
+
+}

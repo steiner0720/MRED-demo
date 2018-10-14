@@ -1,0 +1,224 @@
+{
+    "cleaner": [
+        {
+            "category": "CLEANER",
+            "type": "SHAMPOO",
+            "name": "錫蘭肉桂瑜珈洗髮乳",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/clean_gray.svg",
+            "imgSrc": "clean/00.jpg",
+            "buySrc": "https://shopee.tw/%E9%8C%AB%E8%98%AD%E8%82%89%E6%A1%82%E7%91%9C%E7%8F%88%E6%B4%97%E9%AB%AE%E4%B9%B3-500ml-i.61322656.1004378090",
+            "price": "489",
+            "ml": "500",
+            "content": "如午後的熱瑜珈，為您的頭皮秀髮浸潤在古印度的阿育吠陀保養哲學中，注入滿滿活力。<br/>使用方法：先用清水沖洗頭髮，接著取適量洗髮乳於手心，並輕輕搓出泡沫，接著將泡沫塗抹於整體頭髮上並仔細清洗。可按摩幫助活性成分進入髮根，然後用水沖洗乾淨。<br/>保存期限：三年"
+        },
+        { 
+            "category": "CLEANER",
+            "type": "BODYWASH",
+            "name": "錫蘭肉桂複方精油沐浴露",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/clean_gray.svg",
+            "imgSrc": "clean/01.jpg",
+            "buySrc": "https://shopee.tw/%E9%8C%AB%E8%98%AD%E8%82%89%E6%A1%82%E8%A4%87%E6%96%B9%E7%B2%BE%E6%B2%B9%E6%B2%90%E6%B5%B4%E9%9C%B2-500ml-i.61322656.1004315553",
+            "price": "489",
+            "ml": "500",
+            "content": "精心混合的精油，放鬆的熱水浴以及令人愉快的精神芳香療法治療。POLLUSHIELD深深地淨化了你身上所感受到的不愉快的感覺，讓沐浴就像保養，賦予柔潤膚觸。<br/>使用方法：取適量沐浴乳於手心，輕輕搓揉使其充分起泡，溫柔地按摩於身體肌膚，然後用水沖洗乾淨。<br/>保存期限：三年"
+        },
+        {
+            "category": "CLEANER",
+            "type": "SOAP",
+            "name": "阿爾卑斯冰川蝶豆皂",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/clean_gray.svg",
+            "imgSrc": "clean/02.jpg",
+            "buySrc": "https://shopee.tw/%E9%98%BF%E7%88%BE%E5%8D%91%E6%96%AF%E5%86%B0%E5%B7%9D%E8%9D%B6%E8%B1%86%E7%9A%82(100g)-%E6%9A%A2%E9%80%9A%E6%AF%9B%E5%AD%94%E5%95%9F%E5%8B%95%E6%B8%85%E6%B7%A8%E6%84%9F-i.61322656.1368597126",
+            "price": "100",
+            "ml": "500",
+            "content": "特有的清涼感能夠通暢毛孔，調理肌膚，促進肌膚的新陳代謝後，肌膚變得細緻與嫩白，質感肌膚再也不是夢想！<br/>使用方法：用雙手搓揉出細緻泡沫，清潔手部或是身體的肌膚，並以清水沖淨，每天使用以維持肌膚清潔，使用過後讓香皂風乾即可。<br/>保存期限：三年"
+        }
+    ],
+    "facecare": [
+        {
+            "category": "FACE CARE",
+            "type": "WARM UP LOTION",
+            "name": "發熱E乳液 WARM UP LOTION",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/00.jpg",
+            "buySrc": "https://shopee.tw/%E7%99%BC%E7%86%B1E%E4%B9%B3%E6%B6%B2-200ml-i.61322656.1004359581",
+            "price": "680",
+            "ml": "200",
+            "content": "甩開冬天的肉粽裝，美美地邁步走在冬季的街頭，讓您成為矚目焦點。特殊的香草萃取在衣物包覆下漸漸透出暖意，溫暖呵護溫暖您的肌膚。<br/>使用方法：取適量於手心(按壓2~3次壓頭)，均勻塗抹於全身，溫和的擦或按摩可能有助於更快地加熱，避免與眼睛，嘴唇等敏感部位接觸<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE CARE",
+            "type": "BUBBLE TONER",
+            "name": "法國泡泡溫泉水",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/01.jpg",
+            "buySrc": "https://shopee.tw/%E6%B3%95%E5%9C%8B%E6%B3%A1%E6%B3%A1%E6%BA%AB%E6%B3%89%E6%B0%B4-150ml-i.61322656.995932180",
+            "price": "880",
+            "ml": "150",
+            "content": "法國中部鄉野間的湧泉，山林中成熟掉落的茶花籽，還有地底透出的幸福溫暖泡泡，在冬季中讓您的肌膚也能感受溫泉的療癒。<br/>使用方法：清潔臉後，取適量於手心，均勻塗抹全臉，輕輕按摩肌膚，可在早晚清潔後使用。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "藜麥精純抗齡精華霜",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/02.jpg",
+            "buySrc": "https://shopee.tw/%E8%97%9C%E9%BA%A5%E7%B2%BE%E7%B4%94%E6%8A%97%E9%BD%A1%E7%B2%BE%E8%8F%AF%E9%9C%9C-30ml-i.61322656.1004295545",
+            "price": "1,280",
+            "ml": "30",
+            "content": "古印加喻為五穀之母，黎麥豐富的營養價值已被世界認證，更是您肌膚不二首選的超級食物。<br/>使用方法：請按壓壓頭，按壓1~2次的份量塗抹於全臉。將精華霜均勻輕點於全臉位置，並由臉中央向外側輕輕按摩延展。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "冬季防護隔離乳 SPF28+",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/03.jpg",
+            "buySrc": "https://shopee.tw/%E9%98%B2%E8%AD%B7%E9%9A%94%E9%9B%A2%E4%B9%B3SPF28-30ml-i.61322656.1004282901",
+            "price": "680",
+            "ml": "30",
+            "content": "BB霜不僅隔離從陽光和眩光UVA/UVB射線，而且還幫助您的皮膚承受嚴寒寒冷乾燥的天氣。<br/>使用方法：取請按壓壓頭，於手背上取按壓一次壓頭的使用量。將粉底液均勻輕點於全臉位置，並由臉中央向外側輕輕延展，可運用專用海棉以輕按的方式，從臉部中央迅速向外推勻。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "黃金燕麥奇蹟精華油",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/04.jpg",
+            "buySrc": "https://shopee.tw/%E9%BB%83%E9%87%91%E7%87%95%E9%BA%A5%E5%A5%87%E8%B9%9F%E7%B2%BE%E8%8F%AF%E6%B2%B9-30ml-i.61322656.998490131",
+            "price": "1280",
+            "ml": "30",
+            "content": "Omega369黃金修護比例，喚醒肌膚再生之鑰，是淡斑、抗老化的秘密關鍵，見證奇蹟般的清透無暇。<br/>使用方法：於化妝水後使用，取適量黃金燕麥奇蹟精華油輕點於全臉位置，並由臉中央向外側輕輕按摩延展，早晚皆可使用。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "無痕緊緻派對精華",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/05.jpg",
+            "buySrc": "https://shopee.tw/%E7%84%A1%E7%97%95%E7%B7%8A%E7%B7%BB%E6%B4%BE%E5%B0%8D%E7%B2%BE%E8%8F%AF-30ml-i.61322656.998507799",
+            "price": "2,080",
+            "ml": "30",
+            "content": "今晚的派對，盡情歡笑，無需擔心歲月痕跡。<br/>使用方法：於化妝水後使用，取適量無痕景緻派對精華輕點於全臉位置，並由臉中央向外側輕輕按摩延展，早晚皆可使用。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "柑橘抗菌噴霧",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/06.jpg",
+            "buySrc": "https://shopee.tw/%E6%9C%89%E6%A9%9F%E6%9F%91%E6%A9%98%E6%8A%97%E8%8F%8C%E5%99%B4%E9%9C%A7-30ml-i.61322656.1004307983",
+            "price": "199",
+            "ml": "30",
+            "content": "天然柑橘抗菌與醫療等級清創液配方，抗菌與清潔2in1防護。<br/>使用方法：均勻噴灑於雙手.輕輕搓揉至完全揮發即可.未滿六歲之孩童請大人從旁看護指導使用。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "黃金燕麥紫草護唇膏",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/07.jpg",
+            "buySrc": "https://shopee.tw/%E9%BB%83%E9%87%91%E7%87%95%E9%BA%A5%E7%B4%AB%E8%8D%89%E8%AD%B7%E5%94%87%E8%86%8F-10ml-i.61322656.1004386010",
+            "price": "249",
+            "ml": "10",
+            "content": "要成為讚數破萬的網美，化妝、燈光、掌鏡都絕不能馬虎，直播中被察覺乾裂的笑容可就掉漆了。貼身小包中絕對不能忘記這瓶重要的小物，富含燕麥與紫草精華的長效滋潤護唇膏，滿載源自新疆的紫色草本力量與陽光金穗的溫潤持久觸感，開播前塗一下，完美水潤的雙唇，讚數即刻狂飆。<br/>使用方法：取適量均勻的塗抹於雙唇，使雙唇柔嫩潤澤。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE CARE",
+            "type": "SHAMPOO",
+            "name": "阿爾卑斯冰川水",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/care_gray.svg",
+            "imgSrc": "facecare/08.jpg",
+            "buySrc": "https://shopee.tw/%E9%98%BF%E7%88%BE%E5%8D%91%E6%96%AF%E5%86%B0%E5%B7%9D%E6%B0%B4-%E4%B8%83%E7%A8%AE%E7%BE%8E%E7%99%BD%E8%A4%87%E6%96%B9%E6%88%90%E5%88%86-i.61322656.1368554664",
+            "price": "890",
+            "ml": "150",
+            "content": "阿爾卑斯山純淨的水質地，複合性花草配方，讓肌膚在酷熱的夏天裡，親自感受山上蔓延下來的沁涼感，緩解肌膚的不適。<br/>使用方法：清潔臉後，取適量於手心，均勻塗抹全臉，輕輕按摩肌膚，可在早晚清潔後使用。<br/>保存期限：三年"
+        }
+    ],
+    "facemask": [
+        {
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "阿爾卑斯冰川晚安凍膜",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/00.jpg",
+            "buySrc": "https://shopee.tw/%E9%98%BF%E7%88%BE%E5%8D%91%E6%96%AF%E5%86%B0%E5%B7%9D%E6%99%9A%E5%AE%89%E5%87%8D%E8%86%9C-%E8%82%8C%E8%86%9A%E8%B6%8A%E7%9D%A1%E8%B6%8A%E7%BE%8E%E9%BA%97-i.61322656.1368580547",
+            "price": "590",
+            "ml": "50",
+            "content": "睡前加強保養，當你熟睡時，持續滋潤與賦活肌膚，對抗老化，你將逐漸感受到肌膚變得透亮白皙，膚質宛如新生般光滑細緻<br/>使用方法：晚間清潔臉部，完成基礎保養後，取適當份量均勻延展在臉部肌膚，雙手輕拍臉部至凍膜吸收即可。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "阿爾卑斯急凍面膜5入裝",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/01.jpg",
+            "buySrc": "https://shopee.tw/%E9%98%BF%E7%88%BE%E5%8D%91%E6%96%AF%E6%80%A5%E5%87%8D%E9%9D%A2%E8%86%9C-%E5%87%8D%E4%BD%8F%E5%A5%BD%E8%86%9A%E6%84%9F(5%E5%85%A5%E8%A3%9D)-i.61322656.1368629724",
+            "price": "300",
+            "ml": "26ml X 5片",
+            "content": "滋潤肌膚，舒緩肌膚在夏天的不適感。讓沈睡的肌膚活力甦醒過來，形成肌膚保護膜，肌膚變得淨白柔亮，充滿水分。<br/>使用方法：清潔臉部後，將面膜從包裝袋中取出展開，將面膜輕敷在臉部，用手指輕壓藍色纖維膜使面膜貼緊肌膚，再將藍色纖維膜取下，等待15～20分鐘後即可將面膜取下。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "台灣阿嬤米糠面膜5入裝",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/02.jpg",
+            "buySrc": "https://shopee.tw/%E3%80%90MRED%E7%BE%8E%E8%8A%AE%E3%80%91%E5%8F%B0%E7%81%A3%E9%98%BF%E5%AB%B2%E7%B1%B3%E7%B3%A0%E9%9D%A2%E8%86%9C5%E5%85%A5%E8%A3%9D-i.61322656.1500274512",
+            "price": "200",
+            "ml": "30ml X 5片",
+            "content": "針對油性肌膚研發製作，能有效提升肌膚表面抵禦能力，降低肌膚長時間受損引起的不適感，賦活肌膚，讓肌底學會自體發光！<br/>使用方法：清潔臉部後，將面膜從包裝袋中取出展開，將白色珍珠膜取下後，面膜輕敷在臉部，並用手指輕壓使面膜貼緊肌膚，等待15～20分鐘後即可將面膜取下。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "日本阿嬤山葵面膜5入裝",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/03.jpg",
+            "buySrc": "https://shopee.tw/%E3%80%90MRED%E7%BE%8E%E8%8A%AE%E3%80%91%E6%97%A5%E6%9C%AC%E9%98%BF%E5%AB%B2%E5%B1%B1%E8%91%B5%E9%9D%A2%E8%86%9C5%E5%85%A5%E8%A3%9D-i.61322656.1500264833",
+            "price": "200",
+            "ml": "30ml X 5片",
+            "content": "使用方法：清潔臉部後，將面膜從包裝袋中取出展開，將白色珍珠膜取下後，面膜輕敷在臉部，並用手指輕壓使面膜貼緊肌膚，等待15～20分鐘後即可將面膜取下。<br/>保存期限：三年"
+        },
+        { 
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "高麗阿嬤泡菜面膜5入裝",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/04.jpg",
+            "buySrc": "https://shopee.tw/%E9%AB%98%E9%BA%97%E9%98%BF%E5%AC%A4%E6%B3%A1%E8%8F%9C%E9%9D%A2%E8%86%9C5%E5%85%A5%E8%A3%9D-i.61322656.1410828791",
+            "price": "200",
+            "ml": "30ml X 5片",
+            "content": "針對油性肌膚研發製作，能有效提升肌膚表面抵禦能力，降低肌膚長時間受損引起的不適感，賦活肌膚，讓肌底學會自體發光！<br/>使用方法：清潔臉部後，將面膜從包裝袋中取出展開，將白色珍珠膜取下後，面膜輕敷在臉部，並用手指輕壓使面膜貼緊肌膚，等待15～20分鐘後即可將面膜取下。<br/>保存期限：三年"
+        },
+        {
+            "category": "FACE MASK",
+            "type": "SHAMPOO",
+            "name": "日本阿嬤清酒面膜5入裝",
+            "ingredient": "玉米粉 甘油 滑石粉  水分 玉米油 玉米糊  公平貿易有機肉桂粉 香精  梔子花萃取 爆谷",
+            "svgSrc": "svg/mask_gray.svg",
+            "imgSrc": "facemask/05.jpg",
+            "buySrc": "https://shopee.tw/%E6%97%A5%E6%9C%AC%E9%98%BF%E5%AB%B2%E6%B8%85%E9%85%92%E9%9D%A2%E8%86%9C5%E5%85%A5%E8%A3%9D-i.61322656.1410805253",
+            "price": "200",
+            "ml": "30ml X 5片",
+            "content": "肌膚所需營養精華，修護受損肌膚，有效地改善膚質、光澤、緊緻，還原肌膚最佳狀態，提升肌膚美度與亮度，突破肌膚保養停滯期。<br/>使用方法：清潔臉部後，將面膜從包裝袋中取出展開，將白色珍珠膜取下後，面膜輕敷在臉部，並用手指輕壓使面膜貼緊肌膚，等待15～20分鐘後即可將面膜取下。<br/>保存期限：三年"
+        }
+    ]
+}

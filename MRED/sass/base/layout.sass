@@ -36,6 +36,7 @@
   height: 70px
   background-color: #fff
   z-index: 10
+  overflow: hidden
 .nav-top_wrap
   padding: 0 70px
   height: 70px
@@ -47,7 +48,7 @@
   width: 70px
   height: 100vh
   background-color: #fff
-  z-index: 9
+  z-index: 8
   position: fixed
   display: flex
   flex-direction: column
@@ -78,9 +79,93 @@
   width: calc( 100vw - 140px)
   height: calc( 100vh - 140px)
   z-index: 1
+// menu-layout //
+.menu
+  display: block
+  position: fixed
+  overflow: hidden
+  z-index: 12
+  width: 0%
+  height: calc(100vh - 70px)
+  top: 70px
+  transition: all .8s ease
+  margin: auto
+  left: 0
+  right: 0
+  background-color: $gray_1
+.menu-add
+  width: 100%
+.menu-wrap
+  width: 100%
+  background-color: $gray_1
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+// certificate-layout //
+.certificate-wrap
+  width: 100%
+  height: 100vh
+  position: fixed
+  z-index: 13
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+.certificate-wrap-add
+  opacity: 1
 
 
-  
+  // product-list-layout //
+.product-list, .article
+  position: fixed
+  width: 100%
+  height: calc(100vh - 70px)
+  top: 70px
+  overflow-y: scroll
+  z-index: 9
+  background-color: #fff
+  opacity: 1
+.product-list-add, .article-add
+  opacity: 1
+.product-list_wrap, .article-wrap
+  width: calc( 100vw - 140px)
+  margin: 0 auto
+  overflow: hidden
+
+// buy-layout //
+.buy
+  width: 100%
+  height: calc(100vh - 70px)
+  top: 70px
+  z-index: 10
+  position: absolute
+  background-color: #fff
+  overflow: hidden
+  opacity: 0
+.buy-add
+  opacity: 1
+.buy-bg
+  width: calc( 100vw - 140px)
+  height: calc( 100vh - 140px)
+  margin: 0 auto
+  background-color: $gray_1
+.buy-wrap
+  max-width: 1200px
+  height: calc(100vh - 140px)
+  padding: 0 40px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+
+// article-layout //
+.article
+  z-index: 11
+  display: none
+
+
 // rwd-setting //
 @mixin media($width)
   @media only screen and (max-width: $width)
