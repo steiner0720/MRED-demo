@@ -7,6 +7,16 @@ $(function(){
 		scrollingSpeed: 800,
 		//events
 		onLeave: function(index, nextIndex, direction){
+			if(nextIndex == 1){
+				$('.pagination-prev, .pagination-num_border:eq(0)').addClass('pagination_page-leave')
+				$('.nav-page_gotop').addClass('display-default')
+				$('.nextPage').removeClass('display-default')
+			}
+			if(nextIndex != 1){
+				$('.pagination-prev, .pagination-num_border:eq(0)').removeClass('pagination_page-leave')
+				$('.nav-page_gotop').removeClass('display-default')
+				$('.nextPage').addClass('display-default')
+			}
 			if(index == 1 && direction =='down'){
 			}
 			if(index == 2 && direction =='up'){
@@ -27,9 +37,21 @@ $(function(){
 			if(nextIndex != 2){
 				TweenMax.staggerTo('.product-title span', .2, {x: 0, opacity: 0, delay: 0}, .05);
 			}
+			// pagination function //
+			$(function(){
+				setTimeout(function(){
+					$('.pagination-prev .pagination-num span').html(nextIndex - 1)
+					$('.pagination-num_btn .pagination-num span').html(nextIndex)
+					$('.pagination-next .pagination-num span').html(nextIndex + 1)
+				}, 300)
+
+				$('.pagination-num, .pagination-txt_ani').addClass('pagination-num_add')
+			})
 			
 		}, //***
 		afterLoad: function(anchorLink, index){
+			$('.pagination-txt_ani span').html(window.location.hash.slice(1))
+			$('.pagination-num, .pagination-txt_ani').removeClass('pagination-num_add')
 		},
 		afterRender: function(){},
 		afterResize: function(){},
@@ -38,6 +60,8 @@ $(function(){
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
 
+
+	// index slide //
 	var swiper = new Swiper('.swiper-container', {
 		centeredSlides: true,
 		speed: 1200,
@@ -47,7 +71,7 @@ $(function(){
 		disableOnInteraction: false,
 		}
 	});
-
+	// product slide //
 	var swiperProduct = new Swiper('.swiper-container_product', {
 		centeredSlides: true,
 		speed: 1200,
@@ -60,6 +84,34 @@ $(function(){
 	$('.product-prev_page').click(function(){
 		swiperProduct.slidePrev();
 	})
+	// index pagination UX //
+	$('.gotop-btn').click(function(){
+		$.fn.fullpage.moveTo('intro', 1);
+	})
+	$('.intro-btn, .menu-cleaner, .menu-faceCare, .menu-faceMask').click(function(){
+		$.fn.fullpage.moveTo('product', 2);
+	})
+	$('.menu-cleaner').click(function(){
+		swiperProduct.slideTo(1)
+	})
+	$('.menu-faceCare').click(function(){
+		swiperProduct.slideTo(2)
+	})
+	$('.menu-faceMask').click(function(){
+		swiperProduct.slideTo(3)
+	})
+	$('.menu-contact').click(function(){
+		$.fn.fullpage.moveTo('contact', 4);
+	})
+	$('.pagination-prev').click(function(){
+		$.fn.fullpage.moveSectionUp();
+	})
+	$('.pagination-next').click(function(){
+		$.fn.fullpage.moveSectionDown();
+	})
+
+
+	
 	
 
 
@@ -159,7 +211,7 @@ $(function(){
 					$('.product-list_product-wrap').empty();
 					var responsenum = [response.cleaner, response.facecare, response.facemask]
 					var responseLength = responsenum[swiperProduct.realIndex].length
-					for (i = 0; i < responseLength; ++i){
+					for (i = 0; i < responseLength; ++ i){
 						var pcat = [response.cleaner[i], response.facecare[i], response.facemask[i]]
 						$('.product-list_product-wrap').append(
 							$("<div class='product-list_product-box'><div class='product-box_img'><img src='images/productImg/" + pcat[swiperProduct.realIndex].imgSrc + "'/></div><div class='product-box_info-wrap'><div class='product-box_name'><p>" + pcat[swiperProduct.realIndex].name + "</p></div><div class='product-box_price'><p>$"+ ' ' + pcat[swiperProduct.realIndex].price + "</p></div></div>"),
@@ -172,6 +224,135 @@ $(function(){
 		});
 
 	})
+
+
+	// article-UX //
+	$(function(){
+		$('.article, .writings').fadeOut()
+		// close //
+		$('.writings-header_back-wrap, .menu-left li').click(function(){
+			$('.writings').fadeOut()
+		})
+		$('.article-back_wrap, .menu-cleaner, .menu-faceCare, .menu-faceMask, .menu-contact').click(function(){
+			$('.article').fadeOut()
+		})
+		// open //
+		$('.menu-news').click(function(){
+			$('.article').fadeIn()
+		})
+		$('.news-read').click(function(){
+			$('.writings').fadeIn()
+		})
+	})
+
+
+
+	// article-list-render //
+	$(function(){
+		$.ajax({ 
+			type: 'GET', 
+			url: 'js/article_list.json', 
+			dataType: 'json',
+			success: function (articleData) {
+				// index render //
+				var indexArticleA = 0
+				var indexArticleB = 1
+				$('.news-date p').eq(indexArticleA).html(articleData[indexArticleA].time)
+				$('.news-title p').eq(indexArticleA).html(articleData[indexArticleA].title)
+				$('.news-txt p').eq(indexArticleA).html(articleData[indexArticleA].subtitle)
+				$('.news-img img').eq(indexArticleA).attr('src', 'images/' + articleData[indexArticleA].bgImg)
+				$('.news-date p').eq(indexArticleB).html(articleData[indexArticleB].time)
+				$('.news-title p').eq(indexArticleB).html(articleData[indexArticleB].title)
+				$('.news-txt p').eq(indexArticleB).html(articleData[indexArticleB].subtitle)
+				$('.news-img img').eq(indexArticleB).attr('src', 'images/' + articleData[indexArticleB].bgImg)
+				// index read click //
+				$('.news-read').eq(indexArticleA).click(function(){
+					$('.writings-header_title-name p').html(articleData[indexArticleA].title)
+					$('.writings-header_title-time p').html(articleData[indexArticleA].time)
+					$('.writings-header_subtitle p').html(articleData[indexArticleA].subtitle)
+					$('.writings-body_title p').html(articleData[indexArticleA].title)
+					$('.writings-body_content p').html(articleData[indexArticleA].content)
+					$('.writings-bg_img img').attr('src', 'images/' + articleData[indexArticleA].bgImg)
+					$('.writings-body_img img').attr('src', 'images/' + articleData[indexArticleA].imgSrc)
+				})
+				$('.news-read').eq(indexArticleB).click(function(){
+					$('.writings-header_title-name p').html(articleData[indexArticleB].title)
+					$('.writings-header_title-time p').html(articleData[indexArticleB].time)
+					$('.writings-header_subtitle p').html(articleData[indexArticleB].subtitle)
+					$('.writings-body_title p').html(articleData[indexArticleB].title)
+					$('.writings-body_content p').html(articleData[indexArticleB].content)
+					$('.writings-bg_img img').attr('src', 'images/' + articleData[indexArticleB].bgImg)
+					$('.writings-body_img img').attr('src', 'images/' + articleData[indexArticleB].imgSrc)
+				})
+				$('.article-list_wrap').empty();
+				var articleLength = articleData.length
+				for(i = 0; i < articleLength; ++ i){
+					$('.article-list_wrap').append(
+						$("<div class='article-list_box'><div class='article-box_img-wrap'><div class='article-box_img-mask'></div><div class='article-box_img'><div class='article-box_btn'><div class='article-box_btn-text'><p>read</p></div><div class='article-box_btn-icon'><img src='images/svg/triangle_white.svg'/></div></div><img src='images/" + articleData[i].bgImg + "' /></div></div><div class='article-box_info-wrap'><div class='article-box_title'><p>" + articleData[i].title + "</p></div><div class='article-box_subtitle'><p>" + articleData[i].subtitle + "</p></div></div></div>"),
+						);
+				}
+			},
+			error:function(xhr){
+				}
+		});
+
+	})
+
+	// writings-render
+	$(function(){
+		$(document).on('click', '.article-list_box', function(){
+			$('.writings').fadeIn()
+			var self   = $(this),
+			index  = self.index();
+			$.ajax({
+				type: 'GET',
+				url: 'js/article_list.json',
+				dataType: 'json',
+				success: function(writingData){
+					var datalength = writingData.length
+					var pagen = index
+					$('.writings-header_title-name p').html(writingData[index].title)
+					$('.writings-header_title-time p').html(writingData[index].time)
+					$('.writings-header_subtitle p').html(writingData[index].subtitle)
+					$('.writings-body_title p').html(writingData[index].title)
+					$('.writings-body_content p').html(writingData[index].content)
+					$('.writings-bg_img img').attr('src', 'images/' + writingData[index].bgImg)
+					$('.writings-body_img img').attr('src', 'images/' + writingData[index].imgSrc)
+					$('.writings-pagination_prev').click(function(){
+						pagen --
+						if( pagen < 0){
+							pagen = datalength -1
+						}
+						$('.writings-header_title-name p').html(writingData[pagen].title)
+						$('.writings-header_title-time p').html(writingData[pagen].time)
+						$('.writings-header_subtitle p').html(writingData[pagen].subtitle)
+						$('.writings-body_title p').html(writingData[pagen].title)
+						$('.writings-body_content p').html(writingData[pagen].content)
+						$('.writings-bg_img img').attr('src', 'images/' + writingData[pagen].bgImg)
+						$('.writings-body_img img').attr('src', 'images/' + writingData[pagen].imgSrc)
+					})
+				$('.writings-pagination_next').click(function(){
+					pagen ++
+					if( pagen > datalength -1){
+						pagen = 0
+					}
+					$('.writings-header_title-name p').html(writingData[pagen].title)
+					$('.writings-header_title-time p').html(writingData[pagen].time)
+					$('.writings-header_subtitle p').html(writingData[pagen].subtitle)
+					$('.writings-body_title p').html(writingData[pagen].title)
+					$('.writings-body_content p').html(writingData[pagen].content)
+					$('.writings-bg_img img').attr('src', 'images/' + writingData[pagen].bgImg)
+					$('.writings-body_img img').attr('src', 'images/' + writingData[pagen].imgSrc)
+				})
+				},
+				error: function(){
+
+				}
+			})
+		})
+	})
+
+
 
 
 	// product-lestinfo-render //

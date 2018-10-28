@@ -84,7 +84,7 @@
   display: block
   position: fixed
   overflow: hidden
-  z-index: 12
+  z-index: 13
   width: 0%
   height: calc(100vh - 70px)
   top: 70px
@@ -107,7 +107,7 @@
   width: 100%
   height: 100vh
   position: fixed
-  z-index: 13
+  z-index: 14
   display: flex
   justify-content: center
   align-items: center
@@ -117,7 +117,7 @@
 
 
   // product-list-layout //
-.product-list, .article
+.product-list
   position: fixed
   width: 100%
   height: calc(100vh - 70px)
@@ -126,9 +126,9 @@
   z-index: 9
   background-color: #fff
   opacity: 1
-.product-list-add, .article-add
+.product-list-add
   opacity: 1
-.product-list_wrap, .article-wrap
+.product-list_wrap
   width: calc( 100vw - 140px)
   margin: 0 auto
   overflow: hidden
@@ -162,9 +162,42 @@
 
 // article-layout //
 .article
+  display: block
   z-index: 11
-  display: none
+  position: fixed
+  width: 100%
+  height: calc(100vh - 70px)
+  top: 70px
+  overflow-y: scroll
+  background-color: #fff
+  opacity: 1
+.article-add
+  opacity: 1
+.article-wrap
+  width: calc( 100vw - 140px)
+  margin: 0 auto
+  overflow: hidden
 
+// writings-layout //
+.writings
+  display: block
+  z-index: 12
+  position: fixed
+  width: 100%
+  height: calc(100vh - 70px)
+  top: 70px
+  overflow-y: scroll
+  background-color: #fff
+  opacity: 1
+  img
+    width: 50px
+.writings-add
+  opacity: 1
+.writings-wrap
+  width: calc( 100vw - 140px)
+  margin: 0 auto
+  overflow: hidden
+  margin-bottom: 10vh
 
 // rwd-setting //
 @mixin media($width)

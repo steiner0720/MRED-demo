@@ -111,8 +111,8 @@
 .gotop-font
   transform: rotate(90deg)
   margin-top: 20px
-.gotop-default
-// gotop-default: none //
+.display-default
+  display: none
 .nav-pagination_wrap
   display: flex
   flex-direction: column
@@ -150,19 +150,19 @@
   transform: rotate(90deg)
   z-index: 2
   transform: scale(1.0, 1.0)
-  animation: num_progress .8s ease-in-out
+  transition: all .3s ease
+.pagination-num_add
+  animation: num_progress 1s ease-in-out
 .pagination-txt
   transform: rotate(90deg)
   margin-top: 40px
 .pagination-txt_ani
   transform: scale(1.0, 1.0)
-  animation: num_progress .8s ease-in-out
+  transition: all .3s ease
 @-webkit-keyframes num_progress
   0%
     transform: scale(1.0, 1.0)
-  20%
-    transform: scale(0, 0)
-  80%
+  50%
     transform: scale(0, 0)
   100%
     transform: scale(1.0, 1.0)
@@ -178,6 +178,7 @@
   width: 1px
   height: 16px
   margin: 44px 0
+  display: block
   background-color: $gray_1
 .nextPage-btn
   width: 50px
@@ -193,6 +194,9 @@
     background-color: $gray_4
   img
     width: 24px
+.pagination_page-leave
+  display: none
+
 
 // component-intro //
 .intro-content
@@ -428,8 +432,11 @@
   margin: 0 24px
   img
     width: 50px
+
+// news-component //
 .news-component
-  max-width: 1280px
+  max-width: 1200px
+  padding: 0px 40px
   margin: 0 auto
 .news-top_wrap
   width: 100%
@@ -472,9 +479,10 @@
   &:hover
     background-color: $gold
     .news-read_arrow
-      display: none
+      margin-left: 24px
 .news-read_arrow
   margin-left: 12px
+  transition: all .3s ease
   img
     width: 8px
 .news-content
@@ -493,9 +501,9 @@
     object-fit: cover
 .news-info
   max-width: 600px
-  padding: 0px 40px 
+  padding: 0px 20px 
 .news-title
-  padding-left: 80px
+  padding-left: 90px
 .news-boder
   height: 1px
   width: 100%
@@ -503,10 +511,10 @@
   margin: auto
   position: absolute
   top: 71px
-  bottom: 0
+  bottom: 0px
 .news-txt
-  top: 50px
-  padding: 0px 40px
+  top: 60px
+  padding-left: 20px
 
 // contact-component //
 .contact-info_bg-mask
@@ -841,19 +849,19 @@
 
 
 // product-list-component //
-.product-list_bg, .article-bg
+.product-list_bg
   width: 100%
   height: calc( 100vh - 140px)
   z-index: 1
   position: absolute
-.product-list_bg-mask, .article-bg_mask
+.product-list_bg-mask
   width: 100%
   height: calc( 100vh - 140px)
   position: absolute
   background-color: #000000
   opacity: .6
   z-index: 2
-.product-list_bg-img, .article-bg_img
+.product-list_bg-img
   width: 100%
   height: calc( 100vh - 140px)
   z-index: 1
@@ -864,7 +872,7 @@
 .product-list_main
   max-width: 1200px
   margin: 0 auto
-  padding: 0px 110px
+  padding: 0px 40px
   z-index: 2
   margin-top: 20vh
   background-color: #fff
@@ -900,19 +908,19 @@
     .product-list_back-touch
       width: 50px
       height: 50px
-.product-list_back, .article-back
+.product-list_back
   display: flex
   justify-content: center
   align-items: center
   margin-right: 12px
-.product-list_back-touch, .article-back_touch
+.product-list_back-touch
   width: 0px
   height: 0px
   border-radius: 25px
   background-color: $gray_4
   position: absolute
   transition: all .3s ease
-.product-list_back-icon, .article-back_icon
+.product-list_back-icon
   width: 50px
   height: 50px
   display: flex
@@ -921,24 +929,24 @@
   img
     width: 20px
     transform: rotate(180deg)
-.product-list_en-title, .article-en_title
+.product-list_en-title
   width: 100%
-.product-list_info, .article-info
+.product-list_info
   display: flex
   justify-content: space-between
   align-items: center
-.product-list_label, .article-label
+.product-list_label
   margin-top: 24px
   margin-right: 62px
   display: flex
   justify-content: flex-start
   align-items: center
-.product-list_icon, .article-icon
+.product-list_icon
   margin-right: 24px
   img
     width: 100px
-.product-list_ch-title, .article-ch_title
-.product-list_product-wrap, .article-list_wrap
+.product-list_ch-title
+.product-list_product-wrap
   max-width: 1200px
   padding: 0px 0px
   margin-top: 10vh
@@ -963,7 +971,7 @@
   width: 290px
   height: 217px
   overflow: hidden
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .0)
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2)
   transition: all .3s ease
   img
     width: 100%
@@ -983,6 +991,26 @@
   margin-right: -30px
 
 // article-list-component //
+.article-bg
+  width: 100%
+  height: calc( 100vh - 140px)
+  z-index: 1
+  position: absolute
+.article-bg_mask
+  width: 100%
+  height: calc( 100vh - 140px)
+  position: absolute
+  background-color: #000000
+  opacity: .6
+  z-index: 2
+.article-bg_img
+  width: 100%
+  height: calc( 100vh - 140px)
+  z-index: 1
+  img
+    width: 100%
+    height: calc( 100vh - 140px)
+    object-fit: cover
 .article-main
   max-width: 1200px
   margin: 0 auto
@@ -993,6 +1021,11 @@
   background-color: #fff
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2)
   margin-bottom: 10vh
+.article-back
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 12px
 .article-back_wrap
   display: flex
   justify-content: flex-start
@@ -1002,6 +1035,48 @@
     .article-back_touch
       width: 50px
       height: 50px
+.article-back_touch
+  width: 0px
+  height: 0px
+  border-radius: 25px
+  background-color: $gray_4
+  position: absolute
+  transition: all .3s ease
+.article-back_icon
+  width: 50px
+  height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 20px
+    transform: rotate(180deg)
+.article-en_title
+  width: 100%
+.article-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+.article-label
+  margin-top: 24px
+  margin-right: 62px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.article-icon
+  margin-right: 24px
+  img
+    width: 100px
+.article-list_wrap
+  max-width: 1200px
+  padding: 0px 0px
+  margin-top: 10vh
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+  img
+    width: 290px
 .article-list_box
   width: 290px
   background-color: #fff
@@ -1072,6 +1147,17 @@
   margin-top: 8px
 .article-box_subtitle
   margin-top: 4px
+  max-height: 54px
+  overflow: hidden
+  &:after
+    content: "..."
+    color: #ccc
+    right: 4px
+    position: absolute
+    top: 36px
+    width: 20px
+    hright: 30px
+    background-color: #fff
   p
     transition: all .3s ease
 
@@ -1276,6 +1362,143 @@
   margin: 0px 12px
   img
     width: 8px
+
+
+
+// writings-component //
+.writings-bg
+  width: 100%
+  height: calc( 100vh - 140px)
+  z-index: 1
+  position: absolute
+.writings-bg_mask
+  width: 100%
+  height: calc( 100vh - 140px)
+  position: absolute
+  background-color: #000000
+  opacity: .6
+  z-index: 2
+.writings-bg_img
+  width: 100%
+  height: calc( 100vh - 140px)
+  z-index: 1
+  img
+    width: 100%
+    height: calc( 100vh - 140px)
+    object-fit: cover
+.writings-header
+  max-width: 1280px
+  margin: 0 auto
+  padding: 0px 0px
+  margin-top: 10vh
+  z-index: 2
+.writings-header_top
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.writings-header_back-wrap
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  cursor: pointer
+  &:hover
+    .writings-header_back-touch
+      width: 35px
+      height: 35px
+      opacity: 1
+.writings-header_back
+  width: 35px
+  height: 35px
+  margin: 0px 12px
+  display: flex
+  justify-content: center
+  align-items: center
+.writings-header_back-icon
+  z-index: 2
+  position: absolute
+  img
+    width: 18px
+    transform: rotate(-90deg)
+.writings-header_back-touch
+  z-index: 1
+  background-color: #7b7b7b
+  width: 0px
+  height: 0px
+  opacity: 1
+  transition: all .3s ease
+  border-radius: 35px
+.writings-header_title-icon
+  margin-right: 8px
+  img
+    width: 50px
+.writings-header_title
+.writings-header_subtitle
+  max-width: 1280px
+  margin: 0 auto
+  padding: 0px 40px
+  margin-top: 24px
+.writings-main
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0px 40px
+  z-index: 2
+  margin-top: 40px
+  padding-top: 40px
+  background-color: #fff
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .2)
+.writings-body
+  width: 100%
+.writings-body_title
+  margin-bottom: 20px
+.writings-body_line
+  width: 30%
+  height: 1px
+  background-color: $gold
+  margin-bottom: 20px
+.writings-body_content
+  margin-bottom: 40px
+.writings-body_img
+  max-width: 700px
+  margin: 0 auto
+  padding-bottom: 40px
+  img
+    width: 100%
+.writings-pagination
+  max-width: 1280px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+.writings-pagination_prev, .writings-pagination_next
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  background-color: $gray_2
+  padding: 12px 24px
+  margin-top: -25px
+  z-index: 3
+  cursor: pointer
+  transition: padding .3s ease
+  &:hover
+    padding: 12px 48px
+.writings-pagination_prev
+  .writings-pagination_arrow
+    img
+      transform: rotate(180deg) 
+.writings-pagination_arrow
+  width: 30px
+  height: 30px
+  border-radius: 15px
+  background-color: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 8px
+.writings-pagination_txt
+  margin: 0px 12px
+
+
 // rwd-setting //
 @mixin media($width)
   @media only screen and (max-width: $width)
