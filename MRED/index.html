@@ -259,26 +259,7 @@
               <div class="buy-recommend_title">
                 <p>熱門文章</p>
               </div>
-              <div class="buy-recommend_content-wrap">
-                <div class="buy-recommend_item">
-                  <div class="buy-recommend_img"><img src="images/bg_10.jpg" alt=""/></div>
-                  <div class="buy-recommend_content">
-                    <p>高麗阿嫲泡菜面膜 養出健康膚質好肌底</p>
-                  </div>
-                </div>
-                <div class="buy-recommend_item">
-                  <div class="buy-recommend_img"><img src="images/bg_10.jpg" alt=""/></div>
-                  <div class="buy-recommend_content">
-                    <p>高麗阿嫲泡菜面膜 養出健康膚質好肌底</p>
-                  </div>
-                </div>
-                <div class="buy-recommend_item">
-                  <div class="buy-recommend_img"><img src="images/bg_10.jpg" alt=""/></div>
-                  <div class="buy-recommend_content">
-                    <p>高麗阿嫲泡菜面膜 養出健康膚質好肌底</p>
-                  </div>
-                </div>
-              </div>
+              <div class="buy-recommend_content-wrap"></div>
             </div>
           </div>
         </div>
@@ -310,7 +291,7 @@
               <div class="video-mask_bg"></div>
               <div class="video-btn"><img src="images/svg/triangle_white.svg" alt=""/></div>
             </div>
-            <video src="images/video/cleaner.mp4"></video>
+            <div class="product-list_header-img"><img src="images/bg_9.jpg"/></div>
           </div>
           <div class="product-list_back-wrap">
             <div class="product-list_back">
@@ -377,8 +358,8 @@
           <div class="menu-btn_touch"></div>
         </div>
         <div class="nav-social_link">
-          <div class="nav-ig"><a href="" target="_blank"><img src="images/svg/ig_gray.svg" alt=""/></a></div>
-          <div class="nav-fb"><a href="" target="_blank"><img src="images/svg/fb_gray.svg" alt=""/></a></div>
+          <div class="nav-ig"><a href="https://www.instagram.com/mredlab/" target="_blank"><img src="images/svg/ig_gray.svg" alt=""/></a></div>
+          <div class="nav-fb"><a href="https://www.facebook.com/mredlab/" target="_blank"><img src="images/svg/fb_gray.svg" alt=""/></a></div>
         </div>
       </div>
     </div>
@@ -418,7 +399,7 @@
             <div class="intro-content">
               <div class="intro-content-wrap">
                 <div class="intro-title">
-                  <h1>MRED Reversed Skin Age</h1>
+                  <h1>MRED</h1>
                 </div>
                 <div class="intro-border"></div>
                 <div class="intro-txt content-txt-ch">
@@ -484,12 +465,14 @@
                           <div class="video-mask_bg"></div>
                           <div class="video-btn"><img src="images/svg/triangle_white.svg" alt=""/></div>
                         </div>
-                        <video src="images/video/cleaner.mp4"></video>
+                        <video src="images/video/cleaner.mp4" id="video_cleaner" autoplay="autoplay" muted="muted" loop="loop">
+                          <source src="images/video/cleaner.mp4" type="video/mp4"/>
+                        </video>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="product-cat product-cleaner swiper-slide">
+                <div class="product-cat product-facecare swiper-slide">
                   <div class="product-bg">
                     <div class="product-bg_mask"></div>
                     <div class="product-bg_img"><img src="images/bg_7.jpg" alt=""/></div>
@@ -522,12 +505,14 @@
                           <div class="video-mask_bg"></div>
                           <div class="video-btn"><img src="images/svg/triangle_white.svg" alt=""/></div>
                         </div>
-                        <video src="images/video/cleaner.mp4"></video>
+                        <video src="images/video/cleaner.mp4" id="video_care" autoplay="autoplay" muted="muted" loop="loop">
+                          <source src="images/video/cleaner.mp4" type="video/mp4"/>
+                        </video>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="product-cat product-cleaner swiper-slide">
+                <div class="product-cat product-facemask swiper-slide">
                   <div class="product-bg">
                     <div class="product-bg_mask"></div>
                     <div class="product-bg_img"><img src="images/bg_8.jpg" alt=""/></div>
@@ -560,7 +545,9 @@
                           <div class="video-mask_bg"></div>
                           <div class="video-btn"><img src="images/svg/triangle_white.svg" alt=""/></div>
                         </div>
-                        <video src="images/video/cleaner.mp4"></video>
+                        <video src="images/video/cleaner.mp4" id="video_mask" autoplay="autoplay" muted="muted" loop="loop">
+                          <source src="images/video/cleaner.mp4" type="video/mp4"/>
+                        </video>
                       </div>
                     </div>
                   </div>
@@ -645,69 +632,63 @@
         </section>
         <section class="contact section">
           <div class="section-wrap">
-            <div class="contact-info_bg">
-              <div class="contact-info_bg-mask"></div>
-              <div class="contact-info_bg-img"><img src="images/bg_2.jpg" alt=""/></div>
-            </div>
-            <div class="contact-logo_wrap">
-              <div class="contact-logo"><img src="images/svg/logo_white.svg" alt=""/></div>
+            <div class="contact-bg-wrap">
+              <div class="contact-bg_mask"></div>
+              <div class="contact-bg_img"><img src="images/bg_2.jpg" alt=""/></div>
             </div>
             <div class="contact-wrap">
-              <div class="contact-txt">
+              <div class="contact-logo"><img src="images/svg/logo_white.svg" alt=""/></div>
+              <div class="contact_text-wrap contact-txt">
                 <p>MRED美芮-無添加保養品，是具有20多年經驗與藥師執照的專業團隊所研發，以多項專利技術與國際認證，選用高標準檢驗的成份，同時添加嚴選修護成份，幫助肌膚啟動煥膚機制，使每一滴成份都能有效地被肌膚吸收，達到保養、修復與防禦一次完成。</p>
                 <p><br/>捨去奪目華麗的外衣，換上簡單自然的包裝，貫徹品牌理念 - 堅持關注什麼是對肌膚最好的，只給肌膚需要的，每個人都能讓肌膚自然達到完美膚質的理念。不論你是20代、30代或是40代，都能擁有和身體肌膚的對話，享受心靈的寧靜時光，保持著你自己獨特的生活步調，體驗慢活哲學。</p>
                 <p><br/>秉持用心與熱情研發製作每一個保養品，守護和呵護你的肌膚。全產品不使用過敏原料，也不做動物實驗，採用環保包材，我們希望除了愛自己，也更能愛我們的地球。即便我們沒有迷人的香氣、嘩眾取寵的行銷包裝，但我們關心的不單單是現在的你，甚至是十年、二十年後的你！</p>
               </div>
-              <div class="contact-info">
-                <div class="contact-info_icon">
-                  <div class="contact-info_img"><img src="images/svg/mail.svg" alt=""/></div>
-                  <div class="contact-info_txt-wrap">
-                    <div class="contact-info_title">
+              <div class="contact-body">
+                <div class="contact_locate-wrap">
+                  <div class="contact_locate-header">
+                    <div class="contact_locate-title_wrap">
+                      <div class="contact_locate-icon"><img src="images/svg/locate.svg" alt=""/></div>
+                      <div class="contact_locate-title">
+                        <p>Location</p>
+                      </div>
+                    </div>
+                    <div class="contact_locate-control_wrap">
+                      <div class="contact_locate-control_btn"><img src="images/svg/arrow_white.svg" alt=""/></div>
+                    </div>
+                  </div>
+                  <div class="contact_locate">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.0262922672846!2d121.15193326653169!3d24.965220078497822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682468d18661eb%3A0x36af5ca6f5125351!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5rCR5peP6Lev5YWt5q61NTc25be3MznlvIQyOOiZnw!5e0!3m2!1szh-TW!2stw!4v1539430936628" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+                  </div>
+                </div>
+                <div class="contact_info-wrap">
+                  <div class="contact_info contact_mail">
+                    <div class="contact_info-icon"><img src="images/svg/mail.svg" alt=""/></div>
+                    <div class="contact_info-title">
                       <p>Mail</p>
                     </div>
-                    <div class="contact-info_txt">
-                      <p>mred@mredlab.com</p>
+                    <div class="contact_info-txt">
+                      <P>mred@mredlab.com</P>
                     </div>
                   </div>
-                </div>
-                <div class="contact-info_icon">
-                  <div class="contact-info_img"><img src="images/svg/phone.svg" alt=""/></div>
-                  <div class="contact-info_txt-wrap">
-                    <div class="contact-info_title">
-                      <p>Phone Number</p>
+                  <div class="contact_info contact_phone">
+                    <div class="contact_info-icon"><img src="images/svg/phone.svg" alt=""/></div>
+                    <div class="contact_info-title">
+                      <p>Phone number</p>
                     </div>
-                    <div class="contact-info_txt">
-                      <p>03-420-2266</p>
+                    <div class="contact_info-txt">
+                      <P>03-420-2266</P>
                     </div>
                   </div>
-                </div>
-                <div class="contact-info_icon contact-info_icon-btn">
-                  <div class="contact-info_img"><img src="images/svg/Certificate.svg" alt=""/></div>
-                  <div class="contact-info_txt-wrap">
-                    <div class="contact-info_title">
+                  <div class="contact_info contact_certificate">
+                    <div class="contact_info-icon"><img src="images/svg/Certificate.svg" alt=""/></div>
+                    <div class="contact_info-title">
                       <p>Certificate</p>
                     </div>
-                    <div class="contact-info_txt">
-                      <p>+ more</p>
+                    <div class="contact_info-txt">
+                      <P>+ more</P>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="contact-lcation-wrap">
-              <div class="contact-location_top-wrap">
-                <div class="contact-locate_icon_wrap">
-                  <div class="contact-lcation_icon"><img src="images/svg/locate.svg" alt=""/></div>
-                  <div class="contact-location_title">
-                    <p>Location</p>
-                  </div>
-                </div>
-                <div class="contact-locate_btn-wrap">
-                  <div class="contact-locate_btn"><img src="images/svg/arrow_white.svg" alt=""/></div>
-                </div>
-              </div>
-              <div class="contact-locate_iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.0262922672846!2d121.15193326653169!3d24.965220078497822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682468d18661eb%3A0x36af5ca6f5125351!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5rCR5peP6Lev5YWt5q61NTc25be3MznlvIQyOOiZnw!5e0!3m2!1szh-TW!2stw!4v1539430936628" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
               </div>
             </div>
           </div>
