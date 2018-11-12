@@ -36,11 +36,6 @@ $(function(){
 				document.getElementById("video_cleaner").play()
 				document.getElementById("video_care").play()
 				document.getElementById("video_mask").play()
-				$('.product-prev_page, .product-next_page').click(function(){
-					document.getElementById("video_cleaner").play()
-					document.getElementById("video_care").play()
-					document.getElementById("video_mask").play()
-				})
 			}
 			if(nextIndex != 2){
 				TweenMax.staggerTo('.product-title span', .2, {x: 0, opacity: 0, delay: 0}, .05);
